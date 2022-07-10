@@ -24,7 +24,7 @@ jobs:
           files=$(find $SRC_FOLDER_PATH -type f) # get the file list
           git fetch                         # fetch branches
           git checkout $TARGET_BRANCH       # checkout to your branch
-          git rm -rf *
+          git rm -rf * --ignore-unmatch
           git checkout ${GITHUB_REF##*/} -- $files # copy files from the source branch
           mv $SRC_FOLDER_PATH/* .
           rmdir $SRC_FOLDER_PATH
