@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 🧭 Essays and notes on various topics
+title: Thought stream
 #email: your-email@example.com
-description: personal blog where I post long form thoughts.
+description: personal blog/thought stream
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dominguezsamuel.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: samuel_dmnguez
