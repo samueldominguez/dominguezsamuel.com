@@ -17,6 +17,7 @@ jobs:
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
           git add -A
+          git commit -m "jekyll build files"
           git push
           files=$(find $SRC_FOLDER_PATH -type f) # get the file list
           git fetch                         # fetch branches
