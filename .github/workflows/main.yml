@@ -18,6 +18,8 @@ jobs:
           jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
           git add -A
           git push
+          files=$(find $SRC_FOLDER_PATH -type f) # get the file list
+          git fetch                         # fetch branches
           git checkout $TARGET_BRANCH       # checkout to your branch
           git rm -rf *
           git checkout ${GITHUB_REF##*/} -- $files # copy files from the source branch
