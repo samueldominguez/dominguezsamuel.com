@@ -28,7 +28,7 @@ jobs:
           git checkout ${GITHUB_REF##*/} -- $files # copy files from the source branch
           mv $SRC_FOLDER_PATH/* .
           rmdir $SRC_FOLDER_PATH
-          rm -rf .jekyll-cache
+          sudo rm -rf .jekyll-cache
           git add -A
           git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
           git push origin $TARGET_BRANCH # push to remote branch
