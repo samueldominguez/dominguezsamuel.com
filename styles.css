@@ -1,0 +1,63 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: "EB Garamond", sans-serif;
+    font-size: 22px;
+    line-height: 1.3;
+    background-color: #cbc1ae;
+    color: black;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1rem 4rem 1rem;
+}
+
+@media (min-width: 768px) {
+    body {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        width: 60%;
+    }
+}
+
+/* Header */
+header {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 0 0 1rem 0;
+}
+
+nav a {
+    margin: 0 1rem;
+    /* text-decoration: none; */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.small-text {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 0.8rem;
+}
